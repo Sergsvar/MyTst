@@ -1,0 +1,10 @@
+{% extends 'tst/base.html' %}
+{% block title %}
+{% endblock %}
+
+{% block content %}
+    <form action="#" method="post">
+    {% csrf_token %}
+    <input type="submit" class="btn" value="Записать в бд" name="mybtn">
+    </form>
+{% endblock %}
